@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 
@@ -45,7 +46,11 @@ const MinimalLayout = () => {
           tech="MOTIVATION" 
           href="https://apps.apple.com/us/app/motivverse-ai-powered-quotes/id6474884516" 
         />
-        <ProjectItem title="CORNSTARCH.AI" tech="HEALTH" />
+        <ProjectItem 
+          title="CORNSTARCH.AI" 
+          tech="HEALTH" 
+          href="https://docs.google.com/presentation/d/1Tvd1n28Kk9mZJNTIDXvQeJBaOIHxoSyPxKYQooKbJnc/edit?usp=sharing" 
+        />
         <ProjectItem title="ZENSAI.IOS" tech="MEDITATION" />
         <ProjectItem 
           title="AT&T LABS" 
