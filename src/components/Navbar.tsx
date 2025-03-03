@@ -49,7 +49,7 @@ const Navbar = () => {
         </nav>
         
         <button 
-          className="block md:hidden" 
+          className="block md:hidden animate-flash" 
           aria-label="Toggle menu"
           onClick={toggleMobileMenu}
         >
