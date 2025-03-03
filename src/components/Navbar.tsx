@@ -38,6 +38,8 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <Link to="/about" className="text-sm font-medium hover:text-primary/80 transition-colors">About</Link>
           <Link to="/contact" className="text-sm font-medium hover:text-primary/80 transition-colors">Contact</Link>
+          <Link to="/contact" className="text-sm font-medium hover:text-primary/80 transition-colors">Blog</Link>
+
         </nav>
         
         <button className="block md:hidden" aria-label="Toggle menu">
