@@ -43,7 +43,7 @@ const Navbar = () => {
         <nav className="hidden md:flex items-center space-x-8">
           <Link to="/about" className="text-sm font-medium hover:text-primary/80 transition-colors animate-flash">About</Link>
           <Link to="/contact" className="text-sm font-medium hover:text-primary/80 transition-colors">Contact</Link>
-          <Link to="/contact" className="text-sm font-medium hover:text-primary/80 transition-colors animate-flash">Blog</Link>
+          <Link to="/blog-coming-soon" className="text-sm font-medium hover:text-primary/80 transition-colors animate-flash">Blog</Link>
         </nav>
         
         <button 
@@ -88,7 +88,7 @@ const Navbar = () => {
                 Contact
               </Link>
               <Link 
-                to="/contact" 
+                to="/blog-coming-soon" 
                 className="text-sm font-medium hover:text-primary/80 transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
