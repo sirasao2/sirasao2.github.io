@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import { Link } from 'react-router-dom';
+import { Home } from 'lucide-react';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -35,9 +36,9 @@ const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between max-w-6xl">
-        <Link to="/" className="font-display text-xl font-medium">
+        <Link to="/" className="font-display text-xl font-medium flex items-center">
           <span className="sr-only">Home</span>
-          HOME
+          <Home size={24} />
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
