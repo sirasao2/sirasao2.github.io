@@ -11,10 +11,7 @@ const HeroSection = () => {
         </span>
         
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-          Hi, I'm <span className="font-['Orbitron'] text-primary animate-pulse relative inline-block animate-oscillate">
-            RAHUL SIRASAO
-            <span className="absolute inset-0 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary animate-flash"></span>
-          </span>.<br />
+          Hi, I'm <span className="font-['Orbitron'] text-primary">RAHUL SIRASAO</span>.<br />
           I build digital interfaces.
         </h1>
         

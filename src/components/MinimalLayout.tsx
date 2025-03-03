@@ -1,38 +1,82 @@
-
 import React from 'react';
-import { Button } from './ui/button';
-import { useNavigate } from 'react-router-dom';
+import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
+import { Link } from 'react-router-dom';
 
-const MinimalLayout = () => {
-  const navigate = useNavigate();
+const ProjectItem = ({ title, tech, href, to }: { title: string, tech: string, href?: string, to?: string }) => {
+  const content = (
+    <>
+      <h3 className="font-typewriter text-sm">{title}</h3>
+      <p className="text-xs text-muted-foreground font-typewriter">{tech}</p>
+    </>
+  );
+
+  if (href) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className="border border-border p-2 hover:border-primary transition-colors block">
+        {content}
+      </a>
+    );
+  }
+
+  if (to) {
+    return (
+      <Link to={to} className="border border-border p-2 hover:border-primary transition-colors block">
+        {content}
+      </Link>
+    );
+  }
 
   return (
-    <div className="flex flex-col space-y-6 max-w-md mx-auto text-center p-6">
-      <h1 className="font-['Orbitron'] text-4xl font-bold">
-        <span className="animate-pulse relative inline-block animate-oscillate">
-          RAHUL SIRASAO
-          <span className="absolute inset-0 bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary animate-flash"></span>
-        </span>
-      </h1>
-      <h2 className="text-2xl font-typewriter">Digital Architect</h2>
-      <p className="text-muted-foreground">
-        Portfolio coming soon. Building something minimal but impressive.
-      </p>
-      <div className="flex flex-col sm:flex-row justify-center gap-4 mt-4">
-        <Button variant="outline" onClick={() => navigate('/about')}>
-          About
-        </Button>
-        <Button variant="outline" onClick={() => navigate('/projects')}>
-          Projects
-        </Button>
-        <Button variant="outline" onClick={() => navigate('/blog')}>
-          Blog
-        </Button>
-        <Button variant="outline" onClick={() => navigate('/contact')}>
-          Contact
-        </Button>
-      </div>
+    <div className="border border-border p-2 hover:border-primary transition-colors">
+      {content}
     </div>
+  );
+};
+
+const SocialItem = ({ icon, label, href }: { icon: React.ReactNode, label: string, href: string }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+    {icon}
+    <span className="font-typewriter text-sm">{label}</span>
+  </a>
+);
+
+const MinimalLayout = () => {
+  return (
+    <main className="section">
+      <div className="text-center mb-8">
+        <h1 className="font-typewriter text-4xl mb-4">RAHUL SIRASAO</h1>
+        <p className="font-typewriter text-muted-foreground text-sm">DIGITAL ARCHITECT</p>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 mb-8 w-full max-w-md">
+        <ProjectItem 
+          title="MOTIVVERSE.IOS" 
+          tech="MOTIVATION" 
+          href="https://apps.apple.com/us/app/motivverse-ai-powered-quotes/id6474884516" 
+        />
+        <ProjectItem 
+          title="CORNSTARCH.AI" 
+          tech="HEALTH" 
+          href="https://docs.google.com/presentation/d/1ASZBi27a_u8IZun2InTBHpKVPhTzzLmmceNg4hBWHwQ/edit?usp=sharing" 
+        />
+        <ProjectItem 
+          title="ZENSAI.IOS" 
+          tech="MEDITATION" 
+          to="/coming-soon" 
+        />
+        <ProjectItem 
+          title="AT&T LABS" 
+          tech="RESUME" 
+          href="https://imgur.com/a/F3f6BMJ" 
+        />
+      </div>
+
+      <div className="flex justify-center space-x-6">
+        <SocialItem icon={<GitHubIcon className="w-5 h-5" />} label="GITHUB" href="https://github.com/sirasao2" />
+        <SocialItem icon={<LinkedInIcon className="w-5 h-5" />} label="LINKEDIN" href="https://www.linkedin.com/in/rahul-sirasao-6a3b53114/" />
+        <SocialItem icon={<InstagramIcon className="w-5 h-5" />} label="INSTAGRAM" href="http://instagram.com/sirasaonation" />
+      </div>
+    </main>
   );
 };
 
