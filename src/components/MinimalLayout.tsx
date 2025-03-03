@@ -54,7 +54,7 @@ const MinimalLayout = () => {
         <ProjectItem title="ZENSAI.IOS" tech="MEDITATION" />
         <ProjectItem 
           title="AT&T LABS" 
-          tech="CAREER" 
+          tech="RESUME" 
           href="https://imgur.com/a/F3f6BMJ" 
         />
       </div>
