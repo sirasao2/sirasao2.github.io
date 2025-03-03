@@ -1,8 +1,9 @@
 
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
+import { Link } from 'react-router-dom';
 
-const ProjectItem = ({ title, tech, href }: { title: string, tech: string, href?: string }) => {
+const ProjectItem = ({ title, tech, href, to }: { title: string, tech: string, href?: string, to?: string }) => {
   const content = (
     <>
       <h3 className="font-typewriter text-sm">{title}</h3>
@@ -15,6 +16,14 @@ const ProjectItem = ({ title, tech, href }: { title: string, tech: string, href?
       <a href={href} target="_blank" rel="noopener noreferrer" className="border border-border p-2 hover:border-primary transition-colors block">
         {content}
       </a>
+    );
+  }
+
+  if (to) {
+    return (
+      <Link to={to} className="border border-border p-2 hover:border-primary transition-colors block">
+        {content}
+      </Link>
     );
   }
 
@@ -51,7 +60,11 @@ const MinimalLayout = () => {
           tech="HEALTH" 
           href="https://docs.google.com/presentation/d/1Tvd1n28Kk9mZJNTIDXvQeJBaOIHxoSyPxKYQooKbJnc/edit?usp=sharing" 
         />
-        <ProjectItem title="ZENSAI.IOS" tech="MEDITATION" />
+        <ProjectItem 
+          title="ZENSAI.IOS" 
+          tech="MEDITATION" 
+          to="/coming-soon" 
+        />
         <ProjectItem 
           title="AT&T LABS" 
           tech="RESUME" 
