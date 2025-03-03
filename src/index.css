@@ -93,6 +93,15 @@
   }
 }
 
+@keyframes oscillate {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
 @layer utilities {
   .animate-pulse {
     animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -100,6 +109,10 @@
   
   .animate-flash {
     animation: flash 2.5s infinite;
+  }
+
+  .animate-oscillate {
+    animation: oscillate 3s ease-in-out infinite;
   }
 }
 
