@@ -41,11 +41,23 @@ const SocialItem = ({ icon, label, href }: { icon: React.ReactNode, label: strin
   </a>
 );
 
+const RainbowText = ({ text }: { text: string }) => {
+  return (
+    <h1 className="font-typewriter text-4xl mb-4 rainbow-text">
+      {text.split('').map((letter, index) => (
+        <span key={index} style={{ animationDelay: `${index * 0.2}s` }}>
+          {letter}
+        </span>
+      ))}
+    </h1>
+  );
+};
+
 const MinimalLayout = () => {
   return (
     <main className="section">
       <div className="text-center mb-8">
-        <h1 className="font-typewriter text-4xl mb-4 animate-flash">RAHUL SIRASAO</h1>
+        <RainbowText text="RAHUL SIRASAO" />
         <p className="font-typewriter text-muted-foreground text-sm">DIGITAL ARCHITECT</p>
       </div>
 
