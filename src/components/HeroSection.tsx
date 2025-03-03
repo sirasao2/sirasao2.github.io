@@ -11,7 +11,7 @@ const HeroSection = () => {
         </span>
         
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-          Hi, I'm <span className="font-['Orbitron'] text-primary">YOUR NAME</span>.<br />
+          Hi, I'm <span className="font-['Orbitron'] text-primary">RAHUL SIRASAO</span>.<br />
           I build digital interfaces.
         </h1>
         

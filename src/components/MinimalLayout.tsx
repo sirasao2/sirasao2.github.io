@@ -20,15 +20,15 @@ const MinimalLayout = () => {
   return (
     <main className="section">
       <div className="text-center mb-8">
-        <h1 className="font-typewriter text-4xl mb-4">HUMAN.NAME</h1>
+        <h1 className="font-typewriter text-4xl mb-4">RAHUL SIRASAO</h1>
         <p className="font-typewriter text-muted-foreground text-sm">DIGITAL ARCHITECT</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4 mb-8 w-full max-w-md">
-        <ProjectItem title="PROJECT_01" tech="REACT / TS" />
-        <ProjectItem title="PROJECT_02" tech="NODE / API" />
-        <ProjectItem title="PROJECT_03" tech="UI / UX" />
-        <ProjectItem title="PROJECT_04" tech="DATA / AI" />
+        <ProjectItem title="MOTIVVERSE.IOS" tech="MOTIVATION" />
+        <ProjectItem title="CORNSTARCH.AI" tech="HEALTH" />
+        <ProjectItem title="ZENSAI.IOS" tech="MEDITATION" />
+        <ProjectItem title="AT&T LABS" tech="CAREER" />
       </div>
 
       <div className="flex space-x-6">

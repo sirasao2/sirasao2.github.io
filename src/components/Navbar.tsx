@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between max-w-6xl">
         <a href="#" className="font-display text-xl font-medium">
           <span className="sr-only">Home</span>
-          Your Name
+          Welcome
         </a>
         
         <nav className="hidden md:flex items-center space-x-8">
