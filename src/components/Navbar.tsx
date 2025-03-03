@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between max-w-6xl">
         <Link to="/" className="font-display text-xl font-medium">
           <span className="sr-only">Home</span>
-          Welcome
+          HOME
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
