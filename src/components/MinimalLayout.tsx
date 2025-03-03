@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 import { Link } from 'react-router-dom';
@@ -44,7 +45,7 @@ const MinimalLayout = () => {
   return (
     <main className="section">
       <div className="text-center mb-8">
-        <h1 className="font-typewriter text-4xl mb-4">RAHUL SIRASAO</h1>
+        <h1 className="font-typewriter text-4xl mb-4 animate-flash">RAHUL SIRASAO</h1>
         <p className="font-typewriter text-muted-foreground text-sm">DIGITAL ARCHITECT</p>
       </div>
 
