@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add typewriter font */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 @layer base {
   :root {
     --background: 0 0% 0%;
@@ -26,7 +29,7 @@
     --accent: 0 0% 10%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 0% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 0 0% 20%;
@@ -43,27 +46,27 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased h-screen overflow-hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   html {
-    scroll-behavior: smooth;
+    @apply overflow-hidden;
   }
 }
 
 @layer components {
   .section {
-    @apply w-full max-w-6xl mx-auto px-4 py-20 sm:px-6 md:py-24;
+    @apply w-full max-w-3xl mx-auto px-4 flex flex-col justify-center items-center h-screen;
   }
   
   .section-title {
-    @apply font-display text-3xl md:text-4xl font-semibold mb-4 tracking-tight;
+    @apply font-typewriter text-3xl font-semibold mb-4 tracking-tight;
   }
   
   .section-subtitle {
-    @apply text-muted-foreground text-lg md:text-xl mb-10 max-w-2xl;
+    @apply text-muted-foreground text-lg mb-6 max-w-xl text-center;
   }
   
   .hover-scale {
@@ -72,20 +75,12 @@
 }
 
 @font-face {
-  font-family: 'Inter';
+  font-family: 'Special Elite';
   font-style: normal;
-  font-weight: 100 900;
+  font-weight: 400;
   font-display: swap;
-  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  src: url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 }
 
 /* Add sci-fi themed font */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
-
-@font-face {
-  font-family: 'SF Pro Display';
-  font-style: normal;
-  font-weight: 400 700;
-  font-display: swap;
-  src: local('SF Pro Display');
-}

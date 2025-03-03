@@ -1,27 +1,14 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
-import HeroSection from '../components/HeroSection';
-import ProjectsSection from '../components/ProjectsSection';
-import SocialLinks from '../components/SocialLinks';
+import MinimalLayout from '../components/MinimalLayout';
 import Footer from '../components/Footer';
 
 const Index = () => {
-  useEffect(() => {
-    // Scroll to top on page load
-    window.scrollTo(0, 0);
-  }, []);
-
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="h-screen flex flex-col justify-center items-center overflow-hidden">
       <Navbar />
-      
-      <main className="flex-grow">
-        <HeroSection />
-        <ProjectsSection />
-        <SocialLinks />
-      </main>
-      
+      <MinimalLayout />
       <Footer />
     </div>
   );
