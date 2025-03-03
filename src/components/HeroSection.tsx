@@ -6,18 +6,18 @@ const HeroSection = () => {
   return (
     <section className="section flex flex-col justify-center min-h-[90vh] pt-32">
       <div className="animate-fade-up">
-        <span className="inline-block px-3 py-1 text-sm bg-secondary rounded-full mb-6">
-          Available for work
+        <span className="inline-block px-3 py-1 text-sm bg-secondary rounded-full font-mono mb-6">
+          //SYSTEM.ONLINE
         </span>
         
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-          Hi, I'm <span className="text-primary">Your Name</span>.<br />
-          I build things for the web.
+          Hi, I'm <span className="font-['Orbitron'] text-primary">YOUR NAME</span>.<br />
+          I build digital interfaces.
         </h1>
         
-        <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-8">
-          I'm a developer specializing in creating exceptional digital experiences.
-          Currently, I'm focused on building accessible, human-centered products.
+        <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-8 font-mono">
+          // Developer specializing in creating exceptional digital experiences.
+          // Currently focused on building accessible, human-centered products.
         </p>
         
         <div className="flex space-x-4 mb-12">
@@ -52,9 +52,9 @@ const HeroSection = () => {
         
         <a 
           href="#projects" 
-          className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg transition-all hover-scale"
+          className="inline-flex items-center px-6 py-3 border border-primary text-primary rounded-none hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-mono"
         >
-          View My Work
+          VIEW_PROJECTS()
           <svg className="ml-2 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="m6 9 6 6 6-6"/>
           </svg>
