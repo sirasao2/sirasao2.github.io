@@ -33,13 +33,13 @@ const ProjectCard = ({
         "relative rounded-none overflow-hidden border border-border aspect-video bg-accent order-1",
         isEven ? "md:order-2" : "md:order-1"
       )}>
-        <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors duration-300 ease-out-expo"></div>
+        <div className="absolute inset-0 bg-white/5 group-hover:bg-white/0 transition-colors duration-300 ease-out-expo"></div>
         <img 
           src={imageUrl} 
           alt={title} 
           className="w-full h-full object-cover transition-transform duration-500 ease-out-expo group-hover:scale-105"
         />
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/30 to-transparent h-16"></div>
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent h-16"></div>
       </div>
       
       {/* Content */}
