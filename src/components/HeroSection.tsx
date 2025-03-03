@@ -1,41 +1,17 @@
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { GitHubIcon, LinkedInIcon, TwitterIcon } from './SocialIcons';
 
 const HeroSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const nameArray = "RAHUL SIRASAO".split("");
-  
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   return (
-    <section className="section flex flex-col justify-center min-h-[90vh] pt-16">
+    <section className="section flex flex-col justify-center min-h-[90vh] pt-32">
       <div className="animate-fade-up">
         <span className="inline-block px-3 py-1 text-sm bg-secondary rounded-full font-mono mb-6">
           //SYSTEM.ONLINE
         </span>
         
         <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-          Hi, I'm{" "}
-          <span className="font-['Orbitron'] text-primary inline-block overflow-hidden">
-            {nameArray.map((letter, index) => (
-              <span 
-                key={index} 
-                className="inline-block" 
-                style={{
-                  animation: `scale-in 0.5s ${index * 0.06}s forwards, 
-                             flash 3s ${index * 0.06 + 1}s infinite`,
-                  opacity: 0,
-                  textShadow: isVisible ? '0 0 8px rgba(255, 255, 255, 0.5)' : 'none'
-                }}
-              >
-                {letter === " " ? "\u00A0" : letter}
-              </span>
-            ))}
-          </span>
-          <br />
+          Hi, I'm <span className="font-['Orbitron'] text-primary">RAHUL SIRASAO</span>.<br />
           I build digital interfaces.
         </h1>
         
