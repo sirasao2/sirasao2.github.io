@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 
@@ -48,7 +47,11 @@ const MinimalLayout = () => {
         />
         <ProjectItem title="CORNSTARCH.AI" tech="HEALTH" />
         <ProjectItem title="ZENSAI.IOS" tech="MEDITATION" />
-        <ProjectItem title="AT&T LABS" tech="CAREER" />
+        <ProjectItem 
+          title="AT&T LABS" 
+          tech="CAREER" 
+          href="https://imgur.com/a/F3f6BMJ" 
+        />
       </div>
 
       <div className="flex justify-center space-x-6">
