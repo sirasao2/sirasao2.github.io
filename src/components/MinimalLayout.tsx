@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 import { Link } from 'react-router-dom';
@@ -43,9 +42,9 @@ const SocialItem = ({ icon, label, href }: { icon: React.ReactNode, label: strin
 
 const RainbowText = ({ text }: { text: string }) => {
   return (
-    <h1 className="font-typewriter text-4xl mb-4 rainbow-text">
+    <h1 className="font-typewriter text-4xl mb-4 rainbow-text tracking-wider">
       {text.split('').map((letter, index) => (
-        <span key={index} style={{ animationDelay: `${index * 0.2}s` }}>
+        <span key={index} style={{ animationDelay: `${index * 0.2}s` }} className="mx-1">
           {letter}
         </span>
       ))}
