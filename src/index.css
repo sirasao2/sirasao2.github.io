@@ -74,6 +74,35 @@
   }
 }
 
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0.5;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+  }
+}
+
+@layer utilities {
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-flash {
+    animation: flash 2.5s infinite;
+  }
+}
+
 @font-face {
   font-family: 'Special Elite';
   font-style: normal;
