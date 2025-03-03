@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -29,15 +30,14 @@ const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between max-w-6xl">
-        <a href="#" className="font-display text-xl font-medium">
+        <Link to="/" className="font-display text-xl font-medium">
           <span className="sr-only">Home</span>
           Welcome
-        </a>
+        </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#about" className="text-sm font-medium hover:text-primary/80 transition-colors">About</a>
-          <a href="#projects" className="text-sm font-medium hover:text-primary/80 transition-colors">Projects</a>
-          <a href="#contact" className="text-sm font-medium hover:text-primary/80 transition-colors">Contact</a>
+          <Link to="/about" className="text-sm font-medium hover:text-primary/80 transition-colors">About</Link>
+          <Link to="/contact" className="text-sm font-medium hover:text-primary/80 transition-colors">Contact</Link>
         </nav>
         
         <button className="block md:hidden" aria-label="Toggle menu">

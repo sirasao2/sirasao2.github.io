@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { GitHubIcon, LinkedInIcon, TwitterIcon, GlobeIcon } from './SocialIcons';
+import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 
 const ProjectItem = ({ title, tech }: { title: string, tech: string }) => (
   <div className="border border-border p-2 hover:border-primary transition-colors">
@@ -9,8 +9,8 @@ const ProjectItem = ({ title, tech }: { title: string, tech: string }) => (
   </div>
 );
 
-const SocialItem = ({ icon, label }: { icon: React.ReactNode, label: string }) => (
-  <a href="#" className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
+const SocialItem = ({ icon, label, href }: { icon: React.ReactNode, label: string, href: string }) => (
+  <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
     {icon}
     <span className="font-typewriter text-sm">{label}</span>
   </a>
@@ -31,11 +31,10 @@ const MinimalLayout = () => {
         <ProjectItem title="AT&T LABS" tech="CAREER" />
       </div>
 
-      <div className="flex space-x-6">
-        <SocialItem icon={<GitHubIcon className="w-5 h-5" />} label="GITHUB" />
-        <SocialItem icon={<LinkedInIcon className="w-5 h-5" />} label="LINKEDIN" />
-        <SocialItem icon={<TwitterIcon className="w-5 h-5" />} label="TWITTER" />
-        <SocialItem icon={<GlobeIcon className="w-5 h-5" />} label="WEBSITE" />
+      <div className="flex justify-center space-x-6">
+        <SocialItem icon={<GitHubIcon className="w-5 h-5" />} label="GITHUB" href="https://github.com/sirasao2" />
+        <SocialItem icon={<LinkedInIcon className="w-5 h-5" />} label="LINKEDIN" href="https://www.linkedin.com/in/rahul-sirasao-6a3b53114/" />
+        <SocialItem icon={<InstagramIcon className="w-5 h-5" />} label="INSTAGRAM" href="http://instagram.com/sirasaonation" />
       </div>
     </main>
   );
