@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 import { Link } from 'react-router-dom';
@@ -58,7 +57,7 @@ const MinimalLayout = () => {
         <ProjectItem 
           title="CORNSTARCH.AI" 
           tech="HEALTH" 
-          href="https://docs.google.com/presentation/d/1Tvd1n28Kk9mZJNTIDXvQeJBaOIHxoSyPxKYQooKbJnc/edit?usp=sharing" 
+          href="https://docs.google.com/presentation/d/1ASZBi27a_u8IZun2InTBHpKVPhTzzLmmceNg4hBWHwQ/edit?usp=sharing" 
         />
         <ProjectItem 
           title="ZENSAI.IOS" 
