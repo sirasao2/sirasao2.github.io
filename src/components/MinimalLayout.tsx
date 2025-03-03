@@ -2,12 +2,28 @@
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 
-const ProjectItem = ({ title, tech }: { title: string, tech: string }) => (
-  <div className="border border-border p-2 hover:border-primary transition-colors">
-    <h3 className="font-typewriter text-sm">{title}</h3>
-    <p className="text-xs text-muted-foreground font-typewriter">{tech}</p>
-  </div>
-);
+const ProjectItem = ({ title, tech, href }: { title: string, tech: string, href?: string }) => {
+  const content = (
+    <>
+      <h3 className="font-typewriter text-sm">{title}</h3>
+      <p className="text-xs text-muted-foreground font-typewriter">{tech}</p>
+    </>
+  );
+
+  if (href) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className="border border-border p-2 hover:border-primary transition-colors block">
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <div className="border border-border p-2 hover:border-primary transition-colors">
+      {content}
+    </div>
+  );
+};
 
 const SocialItem = ({ icon, label, href }: { icon: React.ReactNode, label: string, href: string }) => (
   <a href={href} target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-primary hover:text-primary/80 transition-colors">
@@ -25,7 +41,11 @@ const MinimalLayout = () => {
       </div>
 
       <div className="grid grid-cols-2 gap-4 mb-8 w-full max-w-md">
-        <ProjectItem title="MOTIVVERSE.IOS" tech="MOTIVATION" />
+        <ProjectItem 
+          title="MOTIVVERSE.IOS" 
+          tech="MOTIVATION" 
+          href="https://apps.apple.com/us/app/motivverse-ai-powered-quotes/id6474884516" 
+        />
         <ProjectItem title="CORNSTARCH.AI" tech="HEALTH" />
         <ProjectItem title="ZENSAI.IOS" tech="MEDITATION" />
         <ProjectItem title="AT&T LABS" tech="CAREER" />
