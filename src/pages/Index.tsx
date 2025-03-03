@@ -1,14 +1,14 @@
 
 import React from 'react';
 import Navbar from '../components/Navbar';
-import MinimalLayout from '../components/MinimalLayout';
+import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <div className="h-screen flex flex-col justify-center items-center overflow-hidden">
+    <div className="h-screen flex flex-col overflow-auto">
       <Navbar />
-      <MinimalLayout />
+      <HeroSection />
       <Footer />
     </div>
   );
