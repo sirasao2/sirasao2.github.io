@@ -79,7 +79,7 @@ const MinimalLayout = () => {
         />
         <ProjectItem 
           title="AT&T LABS" 
-          tech="RESUME" 
+          tech="RÉSUMÉ" 
           href="https://imgur.com/a/F3f6BMJ" 
         />
       </div>
