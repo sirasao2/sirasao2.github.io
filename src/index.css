@@ -96,7 +96,7 @@
   .rainbow-box {
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
   }
   
   .rainbow-box::before {
@@ -120,63 +120,44 @@
   }
 }
 
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.5;
-  }
-}
-
-@keyframes flash {
-  0%, 50%, 100% {
-    opacity: 1;
-  }
-  25%, 75% {
-    opacity: 0.5;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-  }
-}
-
 @keyframes rainbow-text {
-  0% { color: #ff0000; }
-  16.6% { color: #ff8800; }
-  33.3% { color: #ffff00; }
-  50% { color: #00ff00; }
-  66.6% { color: #0088ff; }
-  83.3% { color: #8800ff; }
-  100% { color: #ff0000; }
+  0% { color: #ff66a5; }
+  16.6% { color: #ff9966; }
+  33.3% { color: #ffff66; }
+  50% { color: #66ff66; }
+  66.6% { color: #66ffff; }
+  83.3% { color: #9966ff; }
+  100% { color: #ff66a5; }
 }
 
 @keyframes rainbow-border {
-  0% { box-shadow: 0 0 15px #ff0000; border-color: #ff0000; }
-  16.6% { box-shadow: 0 0 15px #ff8800; border-color: #ff8800; }
-  33.3% { box-shadow: 0 0 15px #ffff00; border-color: #ffff00; }
-  50% { box-shadow: 0 0 15px #00ff00; border-color: #00ff00; }
-  66.6% { box-shadow: 0 0 15px #0088ff; border-color: #0088ff; }
-  83.3% { box-shadow: 0 0 15px #8800ff; border-color: #8800ff; }
-  100% { box-shadow: 0 0 15px #ff0000; border-color: #ff0000; }
+  0% { box-shadow: 0 0 20px #ff66a5; border-color: #ff66a5; }
+  16.6% { box-shadow: 0 0 20px #ff9966; border-color: #ff9966; }
+  33.3% { box-shadow: 0 0 20px #ffff66; border-color: #ffff66; }
+  50% { box-shadow: 0 0 20px #66ff66; border-color: #66ff66; }
+  66.6% { box-shadow: 0 0 20px #66ffff; border-color: #66ffff; }
+  83.3% { box-shadow: 0 0 20px #9966ff; border-color: #9966ff; }
+  100% { box-shadow: 0 0 20px #ff66a5; border-color: #ff66a5; }
 }
 
 @keyframes rainbow-box {
-  0% { box-shadow: inset 0 0 20px #ff0000, 0 0 15px #ff0000; border-color: #ff0000; }
-  16.6% { box-shadow: inset 0 0 20px #ff8800, 0 0 15px #ff8800; border-color: #ff8800; }
-  33.3% { box-shadow: inset 0 0 20px #ffff00, 0 0 15px #ffff00; border-color: #ffff00; }
-  50% { box-shadow: inset 0 0 20px #00ff00, 0 0 15px #00ff00; border-color: #00ff00; }
-  66.6% { box-shadow: inset 0 0 20px #0088ff, 0 0 15px #0088ff; border-color: #0088ff; }
-  83.3% { box-shadow: inset 0 0 20px #8800ff, 0 0 15px #8800ff; border-color: #8800ff; }
-  100% { box-shadow: inset 0 0 20px #ff0000, 0 0 15px #ff0000; border-color: #ff0000; }
+  0% { box-shadow: inset 0 0 25px #ff66a5, 0 0 20px #ff66a5; border-color: #ff66a5; }
+  16.6% { box-shadow: inset 0 0 25px #ff9966, 0 0 20px #ff9966; border-color: #ff9966; }
+  33.3% { box-shadow: inset 0 0 25px #ffff66, 0 0 20px #ffff66; border-color: #ffff66; }
+  50% { box-shadow: inset 0 0 25px #66ff66, 0 0 20px #66ff66; border-color: #66ff66; }
+  66.6% { box-shadow: inset 0 0 25px #66ffff, 0 0 20px #66ffff; border-color: #66ffff; }
+  83.3% { box-shadow: inset 0 0 25px #9966ff, 0 0 20px #9966ff; border-color: #9966ff; }
+  100% { box-shadow: inset 0 0 25px #ff66a5, 0 0 20px #ff66a5; border-color: #ff66a5; }
 }
 
 @keyframes letter-cascade {
-  0% { color: #ff0000; text-shadow: 0 0 12px rgba(255, 0, 0, 0.7); }
-  16.6% { color: #ff8800; text-shadow: 0 0 12px rgba(255, 136, 0, 0.7); }
-  33.3% { color: #ffff00; text-shadow: 0 0 12px rgba(255, 255, 0, 0.7); }
-  50% { color: #00ff00; text-shadow: 0 0 12px rgba(0, 255, 0, 0.7); }
-  66.6% { color: #0088ff; text-shadow: 0 0 12px rgba(0, 136, 255, 0.7); }
-  83.3% { color: #8800ff; text-shadow: 0 0 12px rgba(136, 0, 255, 0.7); }
-  100% { color: #ff0000; text-shadow: 0 0 12px rgba(255, 0, 0, 0.7); }
+  0% { color: #ff66a5; text-shadow: 0 0 15px rgba(255, 102, 165, 0.7); }
+  16.6% { color: #ff9966; text-shadow: 0 0 15px rgba(255, 153, 102, 0.7); }
+  33.3% { color: #ffff66; text-shadow: 0 0 15px rgba(255, 255, 102, 0.7); }
+  50% { color: #66ff66; text-shadow: 0 0 15px rgba(102, 255, 102, 0.7); }
+  66.6% { color: #66ffff; text-shadow: 0 0 15px rgba(102, 255, 255, 0.7); }
+  83.3% { color: #9966ff; text-shadow: 0 0 15px rgba(153, 102, 255, 0.7); }
+  100% { color: #ff66a5; text-shadow: 0 0 15px rgba(255, 102, 165, 0.7); }
 }
 
 @layer utilities {

@@ -3,15 +3,28 @@ import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 import { Link } from 'react-router-dom';
 
-const ProjectItem = ({ title, tech, href, to }: { title: string, tech: string, href?: string, to?: string }) => {
+const ProjectItem = ({ 
+  title, 
+  tech, 
+  description, 
+  href, 
+  to 
+}: { 
+  title: string, 
+  tech: string, 
+  description: string, 
+  href?: string, 
+  to?: string 
+}) => {
   const content = (
     <>
       <h3 className="font-typewriter text-xl font-bold rainbow-text">{title}</h3>
       <p className="text-sm text-muted-foreground font-typewriter mt-1">{tech}</p>
+      <p className="mt-3 text-sm text-white/80 font-typewriter leading-tight">{description}</p>
     </>
   );
 
-  const baseClasses = "border-3 border-border p-4 hover:border-primary transition-colors block rainbow-box bg-gradient-to-br from-black/50 to-black/20 backdrop-blur-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300";
+  const baseClasses = "border-3 border-border p-5 hover:border-primary transition-colors block rainbow-box bg-gradient-to-br from-black/60 to-black/30 backdrop-blur-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 h-full";
 
   if (href) {
     return (
@@ -63,25 +76,29 @@ const MinimalLayout = () => {
         <p className="font-typewriter text-muted-foreground text-sm">DIGITAL ARCHITECT</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-6 mb-10 w-full max-w-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 w-full max-w-2xl">
         <ProjectItem 
           title="MOTIVVERSE.IOS" 
-          tech="MOTIVATION" 
+          tech="AI ART & INSPIRATION" 
+          description="Boost positivity with stunning AI art and motivational quotes—because your mindset matters."
           href="https://apps.apple.com/us/app/motivverse-ai-powered-quotes/id6474884516" 
         />
         <ProjectItem 
           title="CORNSTARCH.AI" 
-          tech="HEALTH" 
+          tech="AI INGREDIENT SCANNER" 
+          description="Detect estrogens, chemicals, and additives instantly—your health, your choice."
           href="https://starch-insight-analytics.lovable.app/" 
         />
         <ProjectItem 
           title="ZENSAI.IOS" 
-          tech="MEDITATION" 
+          tech="HINDI & MARATHI MEDITATION" 
+          description="Relax, de-stress, and find peace in your language."
           to="/coming-soon" 
         />
         <ProjectItem 
           title="AT&T LABS" 
           tech="RÉSUMÉ" 
+          description="View my professional experience, skills, and achievements in the tech industry."
           href="https://imgur.com/a/F3f6BMJ" 
         />
       </div>
