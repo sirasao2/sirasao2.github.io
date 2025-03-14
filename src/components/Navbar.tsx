@@ -36,10 +36,10 @@ const Navbar = () => {
       )}
     >
       <div className="container flex items-center justify-between max-w-6xl">
-        <Link to="/" className="font-display text-xl font-medium flex items-center border rounded-md px-3 py-1 hover:bg-accent/30 transition-colors">
+        <Link to="/" className="text-sm font-medium flex items-center hover:text-primary/80 transition-colors">
           <span className="sr-only">Home</span>
-          <Home size={24} />
-          <span className="ml-2">HOME</span>
+          <Home size={16} className="mr-1" />
+          <span>HOME</span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
