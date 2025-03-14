@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 const ProjectItem = ({ title, tech, href, to }: { title: string, tech: string, href?: string, to?: string }) => {
   const content = (
     <>
-      <h3 className="font-typewriter text-sm font-bold">{title}</h3>
-      <p className="text-xs text-muted-foreground font-typewriter">{tech}</p>
+      <h3 className="font-typewriter text-xl font-bold rainbow-text">{title}</h3>
+      <p className="text-sm text-muted-foreground font-typewriter mt-1">{tech}</p>
     </>
   );
 
-  const baseClasses = "border-2 border-border p-3 hover:border-primary transition-colors block rainbow-border bg-gradient-to-br from-black/40 to-black/10 backdrop-blur-sm shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300";
+  const baseClasses = "border-3 border-border p-4 hover:border-primary transition-colors block rainbow-box bg-gradient-to-br from-black/50 to-black/20 backdrop-blur-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300";
 
   if (href) {
     return (
@@ -63,7 +63,7 @@ const MinimalLayout = () => {
         <p className="font-typewriter text-muted-foreground text-sm">DIGITAL ARCHITECT</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 mb-8 w-full max-w-md">
+      <div className="grid grid-cols-2 gap-6 mb-10 w-full max-w-lg">
         <ProjectItem 
           title="MOTIVVERSE.IOS" 
           tech="MOTIVATION" 
