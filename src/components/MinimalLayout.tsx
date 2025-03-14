@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 import { Link } from 'react-router-dom';
@@ -5,14 +6,16 @@ import { Link } from 'react-router-dom';
 const ProjectItem = ({ title, tech, href, to }: { title: string, tech: string, href?: string, to?: string }) => {
   const content = (
     <>
-      <h3 className="font-typewriter text-sm">{title}</h3>
+      <h3 className="font-typewriter text-sm font-bold">{title}</h3>
       <p className="text-xs text-muted-foreground font-typewriter">{tech}</p>
     </>
   );
 
+  const baseClasses = "border-2 border-border p-3 hover:border-primary transition-colors block rainbow-border bg-gradient-to-br from-black/40 to-black/10 backdrop-blur-sm shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300";
+
   if (href) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className="border border-border p-2 hover:border-primary transition-colors block rainbow-border">
+      <a href={href} target="_blank" rel="noopener noreferrer" className={baseClasses}>
         {content}
       </a>
     );
@@ -20,14 +23,14 @@ const ProjectItem = ({ title, tech, href, to }: { title: string, tech: string, h
 
   if (to) {
     return (
-      <Link to={to} className="border border-border p-2 hover:border-primary transition-colors block rainbow-border">
+      <Link to={to} className={baseClasses}>
         {content}
       </Link>
     );
   }
 
   return (
-    <div className="border border-border p-2 hover:border-primary transition-colors rainbow-border">
+    <div className={baseClasses}>
       {content}
     </div>
   );
