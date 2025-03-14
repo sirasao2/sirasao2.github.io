@@ -4,6 +4,18 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
+const RainbowText = ({ text }: { text: string }) => {
+  return (
+    <h1 className="font-typewriter text-2xl md:text-4xl mb-6 rainbow-text">
+      {text.split('').map((letter, index) => (
+        <span key={index} style={{ animationDelay: `${index * 0.2}s` }}>
+          {letter}
+        </span>
+      ))}
+    </h1>
+  );
+};
+
 const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
@@ -11,8 +23,8 @@ const About = () => {
       <div className="flex-grow flex items-center justify-center pt-20 pb-6">
         <div className="container max-w-4xl px-4 mx-auto text-center">
           <div className="flex flex-col items-center">
-            {/* Title first */}
-            <h1 className="font-typewriter text-2xl md:text-4xl mb-6 rainbow-text">ABOUT ME</h1>
+            {/* Title with rainbow effect */}
+            <RainbowText text="ABOUT ME" />
             
             {/* Profile image with border - now positioned under the heading */}
             <div className="mb-6">
