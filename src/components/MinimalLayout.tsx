@@ -69,7 +69,7 @@ const MinimalLayout = () => {
         <ProjectItem 
           title="CORNSTARCH.AI" 
           tech="HEALTH" 
-          href="https://starch-insight-analytics.lovable.app/about-us" 
+          href="https://starch-insight-analytics.lovable.app/" 
         />
         <ProjectItem 
           title="ZENSAI.IOS" 
