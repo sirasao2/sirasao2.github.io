@@ -10,8 +10,8 @@ const About = () => {
       <Navbar />
       <div className="flex-grow flex items-center justify-center">
         <div className="container max-w-4xl px-4 mx-auto text-center">
-          <div className="flex flex-col md:flex-row md:items-center md:gap-8">
-            {/* Profile image with border */}
+          <div className="flex flex-col md:flex-row-reverse md:items-center md:gap-8">
+            {/* Profile image with border - now positioned on the right on larger screens */}
             <div className="mx-auto md:mx-0 mb-4 md:mb-0">
               <div className="thin-rainbow-box rounded-lg p-1 w-[220px] h-[220px] overflow-hidden">
                 <img 
