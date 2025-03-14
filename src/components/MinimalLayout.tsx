@@ -17,7 +17,7 @@ const ProjectItem = ({
   to?: string 
 }) => {
   const renderTitle = () => (
-    <h3 className="font-typewriter text-xl font-bold mb-1">
+    <h3 className="font-typewriter text-xl font-bold mb-1 text-center">
       {title.split('').map((letter, index) => (
         <span key={index} className="cascade-letter" style={{ animationDelay: `${index * 0.1}s` }}>
           {letter}
@@ -29,8 +29,8 @@ const ProjectItem = ({
   const content = (
     <>
       {renderTitle()}
-      <p className="text-sm text-primary font-typewriter mt-1">{tech}</p>
-      <p className="mt-3 text-sm text-white font-typewriter leading-tight">{description}</p>
+      <p className="text-sm text-primary font-typewriter mt-1 text-center">{tech}</p>
+      <p className="mt-3 text-sm text-white font-typewriter leading-tight text-center">{description}</p>
     </>
   );
 
