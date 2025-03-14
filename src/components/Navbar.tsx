@@ -43,7 +43,7 @@ const Navbar = () => {
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/about" className="text-sm font-medium hover:text-primary/80 transition-colors animate-flash">About</Link>
+          <Link to="/about" className="text-sm font-medium hover:text-primary/80 transition-colors animate-rainbow">About</Link>
           <Link to="/contact" className="text-sm font-medium hover:text-primary/80 transition-colors">Contact</Link>
           <Link to="/blog-coming-soon" className="text-sm font-medium hover:text-primary/80 transition-colors animate-flash">Blog</Link>
         </nav>
@@ -77,7 +77,7 @@ const Navbar = () => {
             <nav className="flex flex-col space-y-4">
               <Link 
                 to="/about" 
-                className="text-sm font-medium hover:text-primary/80 transition-colors py-2"
+                className="text-sm font-medium hover:text-primary/80 transition-colors py-2 animate-rainbow"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
