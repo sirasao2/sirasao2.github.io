@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 import { Link } from 'react-router-dom';
@@ -95,7 +96,7 @@ const MinimalLayout = () => {
         <ProjectItem 
           title="CORNSTARCH.AI" 
           tech="AI INGREDIENT SCANNER" 
-          description="Detect estrogens, chemicals, and additives instantly in your products with the power of AI vision—protect your health."
+          description="Detect estrogens, chemicals, and additives instantly in your products with the power of AI vision."
           href="https://starch-insight-analytics.lovable.app/" 
         />
         <ProjectItem 
