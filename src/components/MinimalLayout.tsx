@@ -83,7 +83,7 @@ const MinimalLayout = () => {
     <main className="section">
       <div className="text-center mb-8">
         <RainbowText text="RAHUL SIRASAO" />
-        <p className="font-typewriter text-white text-sm font-semibold tracking-wider">DIGITAL ARCHITECT</p>
+        <p className="font-typewriter text-sm font-semibold tracking-wider">DIGITAL ARCHITECT</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 w-full max-w-2xl">
