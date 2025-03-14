@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 import { Link } from 'react-router-dom';
@@ -79,7 +80,7 @@ const RainbowText = ({ text }: { text: string }) => {
 
 const MinimalLayout = () => {
   return (
-    <main className="section">
+    <main className="pt-20 pb-6 px-4 min-h-screen flex flex-col justify-center items-center">
       <div className="text-center mb-8">
         <RainbowText text="RAHUL SIRASAO" />
         <p className="font-typewriter text-muted-foreground text-sm">DIGITAL ARCHITECT</p>
@@ -112,7 +113,7 @@ const MinimalLayout = () => {
         />
       </div>
 
-      <div className="flex justify-center space-x-6">
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
         <SocialItem icon={<GitHubIcon className="w-5 h-5" />} label="GITHUB" href="https://github.com/sirasao2" />
         <SocialItem icon={<LinkedInIcon className="w-5 h-5" />} label="LINKEDIN" href="https://www.linkedin.com/in/rahul-sirasao-6a3b53114/" />
         <SocialItem icon={<InstagramIcon className="w-5 h-5" />} label="INSTAGRAM" href="http://instagram.com/sirasaonation" />
