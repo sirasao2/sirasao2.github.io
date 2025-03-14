@@ -12,7 +12,7 @@ const ProjectItem = ({ title, tech, href, to }: { title: string, tech: string, h
 
   if (href) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className="border border-border p-2 hover:border-primary transition-colors block">
+      <a href={href} target="_blank" rel="noopener noreferrer" className="border border-border p-2 hover:border-primary transition-colors block rainbow-border">
         {content}
       </a>
     );
@@ -20,14 +20,14 @@ const ProjectItem = ({ title, tech, href, to }: { title: string, tech: string, h
 
   if (to) {
     return (
-      <Link to={to} className="border border-border p-2 hover:border-primary transition-colors block">
+      <Link to={to} className="border border-border p-2 hover:border-primary transition-colors block rainbow-border">
         {content}
       </Link>
     );
   }
 
   return (
-    <div className="border border-border p-2 hover:border-primary transition-colors">
+    <div className="border border-border p-2 hover:border-primary transition-colors rainbow-border">
       {content}
     </div>
   );
