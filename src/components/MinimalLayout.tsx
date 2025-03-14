@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 import { Link } from 'react-router-dom';
@@ -89,19 +90,19 @@ const MinimalLayout = () => {
         <ProjectItem 
           title="MOTIVVERSE.IOS" 
           tech="AI ART & INSPIRATION" 
-          description="Boost positivity with stunning AI art and motivational quotes—because your mindset matters."
+          description="Ignite inspiration with stunning AI art of legendary icons and powerful motivational quotes—because greatness starts with your mindset."
           href="https://apps.apple.com/us/app/motivverse-ai-powered-quotes/id6474884516" 
         />
         <ProjectItem 
           title="CORNSTARCH.AI" 
           tech="AI INGREDIENT SCANNER" 
-          description="Detect estrogens, chemicals, and additives instantly—your health, your choice."
+          description="Detect estrogenics, chemicals, and additives with the power of AI vision—cut through the noise, decode product labels in seconds, and take full control of your health."
           href="https://starch-insight-analytics.lovable.app/" 
         />
         <ProjectItem 
           title="ZENSAI.IOS" 
           tech="HINDI & MARATHI MEDITATION" 
-          description="Relax, de-stress, and find peace in your language."
+          description="Immerse Yourself in the Serenity of Hindi & Marathi Meditation, Bringing Peace, Balance, and Mindfulness to Your Journey."
           to="/coming-soon" 
         />
         <ProjectItem 
