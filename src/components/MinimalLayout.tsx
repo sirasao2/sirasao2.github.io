@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 import { Link } from 'react-router-dom';
@@ -105,7 +106,7 @@ const MinimalLayout = () => {
           to="/coming-soon" 
         />
         <ProjectItem 
-          title="AT&T LABS" 
+          title="AT&T.LABS" 
           tech="RÉSUMÉ" 
           description="View my professional experience, skills, and achievements in the tech industry."
           href="https://imgur.com/a/F3f6BMJ" 
