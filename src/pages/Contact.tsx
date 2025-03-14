@@ -21,7 +21,7 @@ const Contact = () => {
       <Navbar />
       <div className="flex-grow flex items-center justify-center">
         <div className="container max-w-3xl px-4 py-16 text-center">
-          <RainbowText text="CONTACT ME" />
+          <RainbowText text="CONTACT" />
           <div className="border border-border p-6 inline-block">
             <p className="font-typewriter text-lg mb-4">Get in touch with me at:</p>
             <a 

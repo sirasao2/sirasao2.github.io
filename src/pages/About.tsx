@@ -24,7 +24,7 @@ const About = () => {
         <div className="container max-w-4xl px-4 mx-auto text-center">
           <div className="flex flex-col items-center">
             {/* Title with rainbow effect */}
-            <RainbowText text="ABOUT ME" />
+            <RainbowText text="ABOUT" />
             
             {/* Profile image with border - now positioned under the heading */}
             <div className="mb-6">
