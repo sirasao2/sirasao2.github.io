@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 import { Link } from 'react-router-dom';
@@ -16,15 +15,25 @@ const ProjectItem = ({
   href?: string, 
   to?: string 
 }) => {
+  const renderTitle = () => (
+    <h3 className="font-typewriter text-xl font-bold mb-1">
+      {title.split('').map((letter, index) => (
+        <span key={index} className="cascade-letter" style={{ animationDelay: `${index * 0.1}s` }}>
+          {letter}
+        </span>
+      ))}
+    </h3>
+  );
+
   const content = (
     <>
-      <h3 className="font-typewriter text-xl font-bold rainbow-text">{title}</h3>
+      {renderTitle()}
       <p className="text-sm text-muted-foreground font-typewriter mt-1">{tech}</p>
       <p className="mt-3 text-sm text-white/80 font-typewriter leading-tight">{description}</p>
     </>
   );
 
-  const baseClasses = "border-3 border-border p-5 hover:border-primary transition-colors block rainbow-box bg-gradient-to-br from-black/60 to-black/30 backdrop-blur-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 h-full";
+  const baseClasses = "border-2 border-border p-5 hover:border-primary transition-colors block thin-rainbow-box bg-gradient-to-br from-black/60 to-black/30 backdrop-blur-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 h-full";
 
   if (href) {
     return (
