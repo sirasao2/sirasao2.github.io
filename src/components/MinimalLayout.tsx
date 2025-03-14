@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from './SocialIcons';
 import { Link } from 'react-router-dom';
@@ -86,7 +85,7 @@ const MinimalLayout = () => {
         <p className="font-typewriter text-muted-foreground text-sm">DIGITAL ARCHITECT</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 w-full max-w-2xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 w-full max-w-2xl">
         <ProjectItem 
           title="MOTIVVERSE.IOS" 
           tech="AI ART & INSPIRATION" 
