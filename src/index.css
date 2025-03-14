@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -46,13 +45,13 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased h-screen overflow-hidden;
+    @apply bg-background text-foreground antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   html {
-    @apply overflow-hidden;
+    @apply overflow-y-auto;
   }
 }
 
